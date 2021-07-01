@@ -243,7 +243,17 @@
   <script src="../js/scroll.js"></script>
   <script src="https://kit.fontawesome.com/0c54b7787d.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script src="../js/hamburger.js"></script>
+  <script>
+  $(document).ready(function() {
+    $(".icon").on('click', function() {
+      $('nav ul').toggleClass('showing');
+      $('nav ul ul').toggleClass('showing');
+    });
+    $('nav').on('mouseleave', function() {
+      $('nav ul').toggleClass('showing');
+    });
+  });
+  </script>
 </body>
 
 </html>
