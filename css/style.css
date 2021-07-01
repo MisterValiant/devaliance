@@ -147,10 +147,12 @@ width:100%;
 color: white;
 text-decoration: none;
 display: inline-block;
-height:40px;
+height:auto;
 width:190px;
 text-align: justify;
-margin-top: 10%;
+font-family: 'Dosis', sans-serif;
+margin-top: 1%;
+font-size: 110%;
 }
 
 .dropdown:hover .dropdown-content {
