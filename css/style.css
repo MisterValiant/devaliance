@@ -1,0 +1,3605 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+h1{
+  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+body {
+  background-color: white;
+  color: black;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  font-size: 100%;
+  font-family: 'Lato', sans-serif;
+}
+
+/*horizontal main nav*/
+.masthead {
+  background-color: rgba(0, 0, 0, 0.80);
+  color: white;
+  position: absolute;
+  width: 100%;
+  z-index: 5;
+}
+
+/*hides hamburger*/
+#fa-fa{
+  display: none;
+}
+
+.main-nav,.secondary-nav {
+  text-align: center;
+  width: 100%;
+}
+
+.main-nav a , .secondary-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  display: block;
+  padding-top: 0px;
+  padding-right: 18px;
+  padding-bottom: 0px;
+  padding-left: 18px;
+  text-shadow: 0 3px 3px rgb(0 0 0 / 16%);
+  border-radius: 22px;
+}
+
+.main-nav ul,.secondary-nav ul {
+  margin-top: 2.5%;
+  margin-right: 2.5%;
+  list-style: none;
+  float: right;
+  list-style-type: none;
+}
+
+.main-nav li,.secondary-nav li{
+  display:inline-block;
+}
+
+.main-nav a:hover,.secondary-nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.main-nav a.active,.secondary-nav a.active {
+  background-color: #1abc9c;
+  color: white;
+}
+
+
+.logo figure{
+  display: inline-block;
+  width: 340px;
+}
+
+
+.logo img {
+  margin-left: 34px;
+  margin-right: 25px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  float: left;
+  width: 75px;
+}
+
+.logo figcaption {
+  font-family: 'Dosis', sans-serif;
+  padding-top: 17px;
+  font-size: 45px;
+}
+
+.logo a {
+  text-decoration: none;
+  color: white;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 10px;
+  right: 30px;
+  z-index: 20;
+  border: none;
+  outline: none;
+  background-color: #1abc9c;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 18px;
+  font-size: 18px;
+}
+
+#myBtn:hover {
+  background-color: turquoise;
+  color: black;
+}
+
+.dropdown {
+position: relative;
+display: inline-block;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: rgba(0, 0, 0, 0.80);
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 10;
+top:15px;
+left: 0;
+padding-left: 0;
+border-bottom:5px solid crimson;
+border-radius: 18px;
+}
+
+.dropdown-content li {
+padding: 0;
+width:100%;
+}
+
+.dropdown-content a {
+color: white;
+text-decoration: none;
+display: inline-block;
+height:40px;
+width:190px;
+text-align: justify;
+margin-top: 10%;
+}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+.icon {
+display: none;
+}
+
+.showing {
+max-height: 100em;
+}
+
+
+.verticalnav .dropdown {
+position: relative;
+display: block;
+}
+
+.verticalnav .dropdown-content li {
+padding: 0;
+width:100%;
+}
+
+.verticalnav .dropdown-content a {
+color: white;
+text-decoration: none;
+display: inline-block;
+height:0px;
+width:190px;
+text-align: justify;
+margin-top: 10%;
+font-size: 100%;
+}
+
+.verticalnav .dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.80);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  top:30px;
+  left:0%;
+  padding-left: 0;
+  border-radius: 18px;
+}
+/*index.html starts here*/
+
+/*index.html banner*/
+#index-banner {
+  background-image: url("../images/bannerbackground.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: auto;
+  height: 775px;
+}
+
+.banner-content {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  padding: 20px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 18px;
+}
+
+.banner-content h1 {
+  font-family: 'Dosis', sans-serif;
+  margin-bottom: 1%;
+  font-size: 1300%;
+  text-shadow: 0px 4.5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.banner-content h1:hover{
+  color:turquoise;
+}
+
+.banner-content h5{
+  font-size: 150%;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+
+  box-shadow: 0px 4.5px 10px rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  padding: 2%;
+  border-radius: 18px;
+}
+
+/*index.html promotion section*/
+#index-promo h2 {
+  font-size: 600%;
+  padding-top: 3%;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.promo img {
+  width: 70%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 12.5%;
+  box-shadow: 0px 4.5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.promo a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.promo figcaption {
+  text-align: center;
+  font-size: 120%;
+}
+
+.promo table {
+  text-align: center;
+  border-collapse: separate;
+  margin-bottom: 5%;
+}
+
+.promo caption {
+  font-size: 300%;
+  margin-bottom: 75px;
+  text-transform: uppercase;
+}
+
+.promo figcaption a:hover {
+  background-color: #1abc9c;
+  color: white;
+  border-radius: 18px;
+  padding: 2.5%;
+  font-weight: bold;
+}
+
+
+
+/*index.html team section*/
+
+#index-team .content-wrap{
+  overflow: auto;
+}
+
+#index-team img {
+  width: 40%;
+  height: auto;
+  margin-bottom: 5%;
+  margin-top: 7%;
+  border-radius: 12.5px;
+  box-shadow: 0px 4.5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.team{
+  margin-top: 2%;
+}
+
+.team p {
+  color: white;
+  padding-bottom: 30px;
+  font-size: 125%;
+  font-weight: bold;
+}
+
+.team-msg {
+  text-align: center;
+  float: right;
+  margin-top: 4%;
+  width: 52%;
+}
+
+#team-msg-heading h2{
+  text-align: center;
+  font-style: italic;
+  font-size: 250%;
+  color: yellow;
+  font-weight: bold;
+  font-family: 'Dosis', sans-serif;
+}
+
+/*index.html deveopment section*/
+
+#index-learn h2 {
+  font-family: 'Dosis', sans-serif;
+  font-size: 400%;
+  padding-top: 3%;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 8%;
+}
+
+#learn-desc , #learn-desc2{
+  font-size: 75%;
+  font-weight: bold;
+  color: indigo;
+}
+
+.learn td{
+  text-align:center;
+}
+
+.learn img {
+  width: 45%;
+  height: auto;
+  margin-bottom: 10%;
+  border-radius: 12.5%;
+}
+
+.learn figure{
+  margin-bottom: 7%;
+}
+
+.learn a {
+  text-decoration: none;
+  color: black;
+}
+
+.learn figcaption a:hover {
+  background-color: #1abc9c;
+  color: white;
+  border-radius: 22px;
+  padding: 2%;
+}
+
+.learn figcaption {
+  text-align: center;
+  font-size: 150%;
+  font-weight: bold;
+}
+
+/*index.html community section*/
+#index-community .content-wrap{
+  overflow: auto;
+  text-align: center;
+}
+
+#index-community img {
+  width: 23%;
+  height: auto;
+  margin-top: 1%;
+  float: right;
+  margin-right: 10%;
+}
+
+#index-community h2 {
+  font-family: 'Dosis', sans-serif;
+  font-size: 250%;
+  padding-top: 3%;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 2%;
+  color: yellow;
+}
+
+#index-community p {
+  color: white;
+  font-size: 125%;
+  font-weight: bold;
+  margin-bottom: 5%;
+}
+
+.index-discord-content{
+  margin-top: 2%;
+  width: 50%;
+  margin-right: 10%;
+  margin-top: 2.5%;
+}
+
+/*footer*/
+group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+  background-color: black;
+  position: relative;
+}
+
+
+.social img {
+  width: auto;
+  height: 30px;
+}
+
+.social {
+  padding-right: 1.5%;
+  padding-top: .5%;
+  position: absolute;
+  float: right;
+}
+
+.social figure {
+  float: right;
+  text-align: center;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.social a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  text-shadow: 0 3px 3px rgb(0 0 0 / 16%);
+  border-radius: 22px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.end-note {
+  color: white;
+  text-align: center;
+  padding-top: 100px;
+}
+
+
+/*dynamic button codes*/
+.btn-grad {
+  background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA 51%, #1FA2FF 100%);
+  cursor: pointer;
+}
+
+.btn-grad {
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-grad:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 8px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #2b2d42;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(47, 200, 245);
+}
+
+
+/*games.html starts here*/
+
+/*games.html banner*/
+.games-banner-content {
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  padding: 20px;
+  text-align: center;
+}
+
+.games-banner-content h1 {
+  font-family: 'Dosis', sans-serif;
+  margin-bottom: 1%;
+  font-size: 1300%;
+  color: #ff0053;
+}
+
+.games-banner-content h1:hover {
+  color: turquoise;
+}
+
+
+.games-banner-content h5 {
+  font-size: 150%;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 4.5px 10px rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  padding: 2%;
+  border-radius: 18px;
+}
+
+.games-banner-video {
+  z-index: -1;
+  overflow: hidden;
+  position: relative;
+}
+
+.games-banner-video video {
+  display: block;
+}
+
+.games-banner {
+  display: flex;
+}
+
+/*games.html promotion section*/
+.games-promo{
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.games-promo img {
+  width: 70%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 12.5%;
+  box-shadow: 0px 4.5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.games-promo a {
+  text-decoration: none;
+  color:orange;
+  font-weight: bold;
+  font-family: 'Dosis', sans-serif;
+}
+
+.games-promo figcaption {
+  text-align: center;
+  font-size: 120%;
+  border-radius: 18px;
+}
+
+.games-promo table {
+  text-align: center;
+  border-collapse: separate;
+  margin-bottom: 5%;
+}
+
+.games-promo caption {
+  font-size: 300%;
+  margin-bottom: 75px;
+  text-transform: uppercase;
+}
+
+.games-promo figcaption a:hover {
+  background-color: #1abc9c;
+  color: white;
+  border-radius: 18px;
+  padding: 2.5%;
+  font-weight: bold;
+}
+
+
+/*games.html cube and super-valiant section*/
+#games-cube, #super-container {
+  height: auto;
+}
+
+#games-cube .content-wrap, #super-container .content-wrap{
+  overflow: auto;
+}
+
+#games-cube img, #super-container img {
+  width: 40%;
+  height: auto;
+  margin-bottom: 5%;
+  margin-top: 7%;
+  border-radius: 12.5px;
+  box-shadow: 0px 4.5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#games-cube p, #super-container p {
+  padding-bottom: 30px;
+  font-size: 125%;
+  font-weight: bold;
+}
+
+.cube-msg, .super-msg{
+  text-align: center;
+  float: right;
+  margin-top: 4%;
+  width: 52%;
+}
+
+#games-cube h2, #super-container h2{
+  text-align: center;
+  font-size: 250%;
+  color: #FF711D;
+  font-weight: bold;
+  font-family: 'Dosis', sans-serif;
+    margin-bottom: 4%;
+}
+
+
+/*games.html kart section*/
+#kart-container, #valirant-container {
+  height: auto;
+  overflow: auto;
+}
+
+#kart-container .content-wrap, #valirant-container .content-wrap{
+  overflow: auto;
+}
+
+#kart-container img, #valirant-container img {
+  float:right;
+  width: 40%;
+  height: auto;
+  margin-bottom: 5%;
+  margin-top: 7%;
+  border-radius: 12.5px;
+  box-shadow: 0px 4.5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#kart-container p, #valirant-container p {
+  padding-bottom: 30px;
+  font-size: 125%;
+  font-weight: bold;
+  color: white;
+}
+
+.kart-msg {
+  text-align: center;
+  margin-top: 6%;
+  width: 52%;
+  margin-right: 6%;
+}
+
+#kart-container h2, #valirant-container h2{
+  text-align: center;
+  font-size: 250%;
+  color: yellow;
+  font-weight: bold;
+  font-family: 'Dosis', sans-serif;
+  margin-bottom: 3%;
+}
+
+/*games.html fixes*/
+.games-banner-video {
+  object-fit: cover;
+  max-width: 100%;
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+.super-msg{
+  margin-top: 6.5%;
+}
+
+
+/*about-us.html starts here*/
+
+/*about-us.html banner*/
+.about-us-banner-image {
+  background-image: url("../gif/koi.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: auto;
+  height: 775px;
+}
+
+.about-us-content h1 {
+  font-family: 'Dosis', sans-serif;
+  margin-bottom: 1%;
+  font-size: 910%;
+  color: white;
+}
+
+.about-us-content h1:hover {
+  color: turquoise;
+}
+
+.about-us-content p{
+  font-size: 150%;
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 4.5px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 18px;
+}
+
+.about-us-content {
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/*about-us.html story section*/
+
+.story h2 {
+  font-family: 'Dosis', sans-serif;
+  font-size: 400%;
+  padding-top: 3%;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 5%;
+}
+
+.story p{
+  text-align: center;
+  font-size: 125%;
+  font-weight: bold;
+}
+
+.story img {
+  width: 35%;
+  height: auto;
+  border-radius: 18px;
+  box-shadow: 0px 4.5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.studio-beginning, .game-studio, .tech-enthusiast {
+  overflow: auto;
+}
+
+.studio-beginning img, .game-studio img {
+  margin-top: 4%;
+  float: left;
+  margin-right: 13%;
+  margin-bottom: 5%;
+  margin-left: 2%;
+}
+
+.game-studio img{
+  margin-top: 5%;
+}
+
+.valiant-team-msg, .enthusiast-msg, .begin-msg{
+  text-align: center;
+  width: 50%;
+  overflow: auto;
+}
+
+.tech-enthusiast img {
+  float: right;
+  margin-bottom: 5%;
+  margin-top: 3%;
+  margin-left: 7%;
+  margin-right: 2%;
+}
+
+.story h3 {
+  margin-top: 5%;
+  font-family: 'Dosis', sans-serif;
+  margin-bottom: 3%;
+  text-align: center;
+  color: #FF711D;
+  font-size: 210%;
+}
+
+.story hr {
+  border-top: 1px solid #bbb;
+  border-radius: 5px;
+  width: 50%;
+}
+
+/*about-us.html team section*/
+#about-the-team{
+  text-align: center;
+  color: white;
+}
+
+.about-team video {
+  margin-bottom: 2%;
+  border-radius: 12.5px;
+}
+
+.about-team h4 {
+  margin-bottom: 1%;
+  color: yellow;
+  font-family: 'Dosis', sans-serif;
+  font-size: 300%;
+}
+
+.about-team p {
+  text-align: center;
+  font-size: 125%;
+  font-weight: bold;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+
+.about-us-button {
+  margin-top: 1.5%;
+}
+
+
+/* development.html starts here */
+
+/* development.html */
+.dev-banner {
+  background-image: url("../images/development-banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: auto;
+  height: 775px;
+}
+
+.our-dev {
+  text-align: center;
+  overflow: auto;
+}
+
+.dev h2 {
+  font-size: 400%;
+  text-align: center;
+  text-transform: uppercase;
+  overflow-wrap: break-word;
+  font-family: 'Dosis', sans-serif;
+  padding-top: 3%;
+  text-align: center;
+  margin-bottom: 8%;
+}
+
+.dev-table {
+  float: left;
+  overflow: auto;
+  margin-right: 5%;
+  margin-left: 6%;
+}
+
+.dev-para {
+  margin-top: 2.3%;
+  overflow: auto;
+  text-align: left;
+  width: 50%;
+  font-size: 125%;
+  font-weight: bold;
+}
+
+.dev-para li{
+  display: list-item;
+  color: black;
+  list-style-position: inside;
+}
+
+#dev-buttonx{
+  margin-top: 8%;
+}
+
+.description-content strong{
+color: #FF711D;
+font-size: 150%;
+font-family: 'Dosis', sans-serif;
+}
+
+.title-in-dev h2{
+  font-family: 'Dosis', sans-serif;
+  font-size: 400%;
+  padding-top: 3%;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 8%;
+  color:yellow;
+}
+
+#second-dt{
+margin-top: 4%;
+}
+
+.description-content{
+  font-size: 125%;
+  font-weight: bold;
+}
+ .description-content dl{
+   text-align: left;
+   margin-top: 4%;
+ }
+
+.description-content dt{
+  font-size: 130%;
+  font-style: oblique;
+color:yellow;
+margin-bottom: 1%;
+}
+
+.description-content dd{
+text-indent: 10%;
+}
+
+.dev-table td, .dev-table tr {
+  padding: 4%;
+}
+
+.dev-table img {
+  width: 100%;
+  max-width: 140px;
+  overflow: auto;
+}
+
+.content-wrap {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 60px 50px;
+}
+
+.our-dev p {
+  font-size: 125%;
+  float: left;
+}
+
+.title-table {
+  overflow: auto;
+  border-bottom: 7px solid #ff0053;
+  display: inline-block;
+  margin-bottom: 5%;
+  border-radius: 18px;
+}
+
+.title-table img {
+  width: 100%;
+  max-width: 200px;
+  padding: 3%;
+}
+
+.title-table td {
+  display: inline-block;
+  float: left;
+}
+
+.title-in-dev {
+  text-align: center;
+  color: white;
+}
+
+/*support.html*/
+.support-banner-image {
+  background-image: url("../images/support-banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: auto;
+  height: 400px;
+  overflow: hidden;
+  background-position: center center;
+  background-color: #252e33;
+  background-size: auto 100%;
+  height: 420px;
+}
+
+.support-banner-content {
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  top: 20%;
+  text-align: center;
+  display: inline-block;
+  left: 21%;
+}
+
+#ddl{
+  margin-bottom: 6%;
+  margin-top: 6%;
+}
+
+.support-banner-content i {
+  font-style: normal;
+  color: #FF711D;
+}
+
+.support-banner-content h1:hover,.support-banner-content i:hover {
+  color:cyan;
+}
+
+.support-banner-content p{
+  font-size:120%;
+  font-weight:bold;
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 4.5px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 18px;
+}
+
+.support-banner-content h1 {
+  font-family: 'Dosis', sans-serif;
+  margin-bottom: 1%;
+  font-size: 700%;
+}
+
+.form-title {
+  font-family: 'Dosis', sans-serif;
+  position: relative;
+  background-color: #FF711D;
+  color: #fff;
+  display: inline-block;
+  left: 14.3%;
+  margin-top: -10px;
+  padding: 10px;
+  font-size: 1.75rem;
+  margin-left: 4px;
+  border-radius: 18px;
+}
+
+.support-form-wrapper {
+  background: rgb(102,88,200);
+  background: linear-gradient(180deg, rgba(102,88,200,1) 0%, rgba(245,56,140,1) 100%);
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 60px 50px;
+  overflow: auto;
+  border-radius:18px;
+  border: 5px solid white;
+  border-color: black;
+  margin-bottom: 55px;
+}
+
+.support-form details p{
+  text-align: left;
+  margin-top: 2%;
+}
+
+.support-form details {
+  background-color: white;
+}
+
+.support-form details:hover {
+  background-color: turquoise;
+  cursor: help;
+}
+
+.table-1 hr {
+  margin: 20px;
+}
+
+.table-1{
+  margin-top: 7%;
+}
+
+.more-support{
+  text-align: center;
+}
+
+.more-support table{
+  text-align: center;
+  width: 100%;
+  margin-left: 65px;
+}
+
+.more-support table, .contact-community table {
+  height: 100%;
+  width: 100%;
+}
+
+.support-form summary{
+  font-family: 'Dosis', sans-serif;
+  font-size: 120%;
+}
+
+.support-form details {
+  height: auto;
+  width: 500px;
+  border-radius: 18px;
+  padding: 1.5%;
+}
+
+.table-1 {
+  float: left;
+}
+
+.table-2 {
+  position: relative;
+  bottom: 100%;
+  float: right;
+  background-image: linear-gradient(#4adede, cyan);
+  border-radius: 18px;
+  border: 5px solid white;
+  border-color: indigo;
+  padding: 2%;
+}
+
+.more-support img, .contact-community img {
+  width: auto;
+  height: 150px;
+  padding-bottom: 20px;
+}
+
+.more-support figure, .contact-community figure {
+  text-align: center;
+}
+
+.support-form-2 p {
+  font-family: 'Dosis', sans-serif;
+  color: white;
+}
+
+#support-ticket-2 {
+  color: #FF711D;
+}
+
+#support-ticket-3 {
+  color: black;
+}
+
+#txtacomments {
+  resize: none;
+  width: auto;
+  height: 100px;
+}
+
+.more-support h2, .contact-community h2 {
+  font-family: 'Dosis', sans-serif;
+  font-size: 400%;
+  padding-top: 3%;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 5%;
+  color:yellow;
+
+}
+
+.more-support figcaption, .contact-community figcaption {
+  color: white;
+  text-decoration: none;
+}
+
+#support-fig-1 {
+  margin-bottom: 7%;
+}
+
+#support-fig-2 {
+  margin-bottom: 2.8%;
+}
+
+/*contact-us.html*/
+
+.contact-community table{
+  margin-top: 8%;
+}
+
+.contact-map{
+  background-image: url("../images/background-map.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: auto;
+  background-position: center center;
+  background-color: #f8f9fa;
+  background-size: auto 100%;
+  height: 500px;
+}
+
+.contact-map iframe{
+  width:100%;
+  height:500px;
+}
+
+.contact-map h1{
+  display: none;
+}
+
+.map-spacer {
+  padding-bottom: 94px;
+}
+
+.masthead-contact {
+  background-color: black;
+  color: white;
+  position: absolute;
+  width: 100%;
+}
+
+#postform p{
+  font-size: 150%;
+  font-weight: bold;
+
+}
+
+#postform fieldset{
+  display: inline-block;
+  padding-left: 2%;
+  padding-right:2%;
+  margin-bottom: 3%;
+  text-align: justify;
+  border-radius: 18px;
+}
+
+#postform textarea{
+  margin-right: 4%;
+}
+
+#postform legend{
+  text-align: left;
+  background-color: orange;
+  color:black;
+  font-weight: bold;
+  border-radius: 18px;
+  padding: 1%;
+  margin-bottom: 2%;
+}
+
+#txtacomments{
+  font-size: 120%;
+  text-align: justify;
+}
+
+#ddlgames{
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.contact-card {
+  font-family: 'Dosis', sans-serif;
+  color: white;
+  width: 100%;
+  background-color: #29313a;
+  font-size: 150%;
+  width: 50%;
+  float: left;
+  height: 600px;
+}
+
+.contact-form-section {
+  margin-top: -2.8px;
+}
+
+.contact-card h1 {
+  padding: 2%;
+  position: relative;
+  background-color: #29313a;
+}
+
+#contact-help {
+  color: #FF711D;
+  padding: 2%;
+}
+
+#contact-loop {
+  color: #ccc;
+  text-align: right;
+  padding: 2%;
+}
+
+.contact-card-background img {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.contact-form {
+  float: left;
+  background-color: black;
+  position: relative;
+  width: 50%;
+  color: yellow;
+  height: 600px;
+  text-align: center;
+}
+
+.contact-form form{
+  text-align: center;
+
+}
+
+#contact-wrap {
+  overflow: auto;
+}
+
+.contact-form form {
+  text-align: center;
+  margin-top: 5%;
+}
+
+/*the-valiant-cube.html*/
+.game-banner-video {
+  object-fit: cover;
+  max-width: 100%;
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+.game-banner-content {
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid black;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  margin-top: 450px;
+  left: 50%;
+  width: 70%;
+  padding: 20px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 18px;
+  box-shadow: 0px 4.5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#game-form h2, #game-features h2, .game-banner-content h1 {
+  font-family: 'Dosis', sans-serif;
+  font-size: 400%;
+  padding-top: 3%;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 5%;
+}
+
+.game-banner-content p {
+  font-size: 125%;
+  font-weight: bold;
+}
+
+.game-banner-video {
+  z-index: -1;
+  overflow: hidden;
+  position: relative;
+}
+
+.game-banner-video video {
+  display: block;
+  width: 100%;
+  height: 125vh;
+  object-fit: cover;
+}
+
+.game-banner {
+  display: flex;
+}
+
+.spacer hr {
+  width: auto;
+  height: 20px;
+  background-image: linear-gradient(rgba(0, 0, 0, 1), #c9f1fd);
+  border-style: none;
+}
+
+.game-logo img {
+  height: auto;
+  width: 200px;
+}
+
+.game-description {
+  float: left;
+  width: 47%;
+  text-align: center;
+}
+
+.game-description i {
+  text-align: center;
+  font-style: normal;
+  font-family: 'Dosis', sans-serif;
+  font-size: 200%;
+  color: #FF711D;
+}
+
+.game-trailer {
+  position: relative;
+}
+
+.game-trailer iframe {
+  border-radius: 18px;
+  border: 5px solid #0c3057;
+  background-color: #0c3057;
+  box-shadow: 0px 4.5px 10px rgba(0, 0, 0, 0.5);
+  margin-top: 10px;
+  width: 446px;
+  height: 251px;
+}
+
+.game-about p {
+  margin-right: 45px;
+  font-size: 120%;
+  text-align: right;
+  font-size: 125%;
+  font-weight: bold;
+}
+
+.game-about h2 {
+  font-family: 'Dosis', sans-serif;
+  margin-bottom: 7%;
+  font-size: 300%;
+  text-align: center;
+}
+
+.gameplay {
+  padding-bottom: 5%;
+}
+
+.gameplay h2, #soundtrack h2, #game-play h2 {
+  font-family: 'Dosis', sans-serif;
+  font-size: 400%;
+  padding-top: 3%;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 5%;
+  color: yellow;
+}
+
+.gameplay img {
+  width: 45%;
+  height: auto;
+  border-radius: 12.5px;
+  box-shadow: 0px 4.5px 10px rgba(0, 0, 0, 0.5);
+  margin-bottom: 5%;
+  margin-top: 5%;
+  margin-right: 10%;
+  margin-left: 7%;
+  box-shadow: 0px 4.5px 10px rgba(0, 0, 0, 0.9);
+}
+
+.gameplay1, .gameplay2 {
+  overflow: auto;
+}
+
+.gameplay1 img {
+  float: left;
+}
+
+.gameplay1 p, .gameplay1 h3, .gameplay2 p, .gameplay2 h3 {
+  border-radius: 12.5px;
+  margin-right: 10%;
+  color: white;
+  font-size: 125%;
+  font-weight: bold;
+}
+
+.gameplay1 p, .gameplay1 h3 {
+  text-align: left;
+}
+
+.gameplay2 p, .gameplay2 h3 {
+  text-align: right;
+}
+
+.gameplay2 img {
+  float: right;
+}
+
+.gameplay h3 {
+  margin-top: 9%;
+  font-family: 'Dosis', sans-serif;
+  font-size: 230%;
+  margin-bottom: 1%;
+  color: yellow;
+}
+
+.gameplay hr {
+  border-top: 1px solid #bbb;
+  background-color: #bbb;
+  border-radius: 5px;
+  width: 50%;
+}
+
+.features-table {
+  text-align: center;
+  width: 100%;
+  height: auto;
+  font-size: 125%;
+  font-weight: bold;
+}
+
+.features-table img {
+  width: 90%;
+  height: auto;
+  margin-bottom: 60px;
+  border-radius: 18px;
+  border: 2px solid grey;
+  background-color: grey;
+  box-shadow: 0px 4.5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.feature2 img {
+  transform: rotate(-3deg);
+  border: 3.5px solid black;
+  width: 130%;
+  z-index: 2;
+  margin-left: -40px;
+  background-color: black;
+}
+
+.soundtrack-table {
+  text-align: center;
+  width: 100%;
+  height: auto;
+  color: white;
+}
+
+.soundtrack-table table {
+  border: 5px solid white;
+  text-align: center;
+  display: inline-block;
+  background-image: linear-gradient(#414d4d, #000000);
+  border-radius: 18px;
+}
+
+.soundtrack-table td {
+  text-align: center;
+  padding: 30px;
+}
+
+/*
+.soundtrack-table audio{
+  display: block;
+  width: 200px;
+}
+*/
+#soundtrack-author {
+  text-orientation: upright;
+ transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  font-family: 'Dosis', sans-serif;
+  font-size: 270%;
+  text-align:center;
+}
+
+
+#soundtrack-title {
+  font-family: 'Dosis', sans-serif;
+  font-size: 200%;
+  text-transform: uppercase;
+  text-align: right;
+}
+
+#trackname1,#trackname2,#trackname3 {
+  font-size: 125%;
+  font-style: italic;
+  text-align: right;
+  margin-bottom: 5%;
+  margin-right: 5%;
+}
+
+.selector datalist {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  padding-left: 25%;
+}
+
+.selector input {
+  width: 50%;
+}
+
+.selector option {
+  font-size: 1.8em;
+  text-align: center;
+}
+
+.selector p, #game-checkbox input {
+  margin-bottom: 1%;
+}
+
+#tickmarks {
+  width: 50%;
+}
+
+.input-container {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+#checkbox-space1,#checkbox-space2,#checkbox-space3,#checkbox-space4,#checkbox-space5,#checkbox-space6 {
+  margin-right: 1%;
+}
+
+#game-checkbox1 input, #game-checkbox2 input, #game-spinner input {
+  margin-left: 1%;
+}
+
+#wrapper {
+  width: 60%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.game-form-structure, #tickmarks option {
+  text-align: center;
+}
+
+#game-form fieldset {
+  background-image: linear-gradient(#f93f3f, #ed9b97);
+  border-radius: 18px;
+  border: 5px solid black;
+  background-color: black;
+  box-shadow: 0px 4.5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.secret-form fieldset {
+  background: rgb(63,3,156);
+background: radial-gradient(circle, rgba(63,3,156,1) 0%, rgba(217,21,115,1) 100%);
+  border-radius: 18px;
+  border: 5px solid black;
+  background-color: black;
+  box-shadow: 0px 4.5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#game-form input, #game-form select, #game-form optgroup {
+  border-radius: 18px;
+  padding: 5px;
+  border: 2px solid black;
+  margin-left: 1%;
+}
+
+#game-form legend {
+  background-color: black;
+  color: white;
+  border-radius: 18px;
+  padding: 6px;
+  margin-bottom: 2px;
+  text-align: left;
+  font-size: 120%;
+}
+
+.game-form-structure form {
+  background-image: linear-gradient(#42378f, #f5388c);
+  border-radius: 40px;
+  border: 4px solid black;
+  background-color: black;
+  box-shadow: 0px 4.5px 10px rgba(0, 0, 0, 0.5);
+  font-family: 'Dosis', sans-serif;
+  font-size: 120%;
+}
+
+.secret-form form {
+  background: rgb(255,65,127);
+background: radial-gradient(circle, rgba(255,65,127,1) 0%, rgba(140,121,255,1) 100%);
+  border-radius: 40px;
+  border: 4px solid black;
+  background-color: black;
+  box-shadow: 0px 4.5px 10px rgba(0, 0, 0, 0.5);
+  font-family: 'Dosis', sans-serif;
+  font-size: 120%;
+}
+
+#form-btn1,#form-btn2 {
+  margin: 15px;
+  width: 120px;
+  height: 28px;
+  border-radius: 18px;
+  color: white;
+  background-image: linear-gradient(#080452, #cc2828);
+  border: 4px black;
+  box-shadow: 0px 4.5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#form-btn3{
+}
+
+#form-btn1:hover,#form-btn2:hover {
+  background-image: linear-gradient(#ffffff, #4adede);
+  color: black;
+}
+
+/*our-team.html*/
+.ourteam-banner-content {
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: black;
+}
+
+.ourteam-banner-content h1{
+  font-size: 1200%;
+  font-family: 'Dosis', sans-serif;
+  color:crimson;
+}
+
+.ourteam-banner-content h1:hover{
+  color: turquoise;
+}
+
+.ourteam-banner-content p{
+  color: white;
+  font-size: 150%;
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 4.5px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 18px;
+}
+
+#ourteam-banner {
+  background-image: url("../gif/galaxy-flow.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: auto;
+  height: 775px;
+}
+
+/*Setting up the polaroid effect*/
+.polaroid {
+  background: #fff;
+  padding: 1rem;
+  box-shadow: 0 0.2rem 1.2rem rgba(0, 0, 0, 0.2);
+}
+
+/*Setting the default size of the image*/
+.polaroid>img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*setting the default caption size*/
+.caption {
+  font-size: 1.8rem;
+  text-align: center;
+  line-height: 2em;
+  font-weight: bold;
+}
+
+/*Adding greyscale*/
+.item {
+  width: 30%;
+  display: inline-block;
+  filter: grayscale(100%);
+}
+
+/*final result of effect when hovered on*/
+.item:nth-of-type(4n+1) {
+  transform: scale(0.8, 0.8) rotate(5deg);
+  transition: all 0.35s;
+}
+
+.item:hover {
+  filter: none;
+  transform: scale(1, 1) rotate(0deg) !important;
+  transition: all 0.35s;
+}
+
+#founder .item, #editor .item, #job .item {
+  float: left;
+  margin-left: 8%;
+}
+
+#founder .founder-content, #editor .editor-content, #job .job-content {
+  margin-right: 8%;
+  color: black;
+  text-align: left;
+  font-size: 125%;
+  font-weight: bold;
+  margin-left: 45%;
+  margin-top: 2%;
+}
+
+#founder h3, #editor h3, #job h3 {
+  font-family: 'Dosis', sans-serif;
+  padding-top: 3%;
+  text-align: center;
+  text-transform: uppercase;
+  color: black;
+  font-size: 210%;
+  margin-bottom: 1%;
+  margin-right: 4%;
+}
+
+#partner .content-wrap, #founder .content-wrap, #editor .content-wrap, #job .content-wrap {
+  position: relative;
+  overflow: auto;
+}
+
+#partner .item {
+  float: right;
+  margin-right: 8%;
+}
+
+#partner h3 {
+  font-family: 'Dosis', sans-serif;
+  padding-top: 3%;
+  text-align: center;
+  text-transform: uppercase;
+  color: yellow;
+  font-size: 210%;
+  margin-bottom: 1%;
+  margin-left: -7%;
+}
+
+#partner p {
+  margin-right: 45%;
+  color: white;
+  font-size: 125%;
+  font-weight: bold;
+  margin-top: 2%;
+  text-align: center;
+}
+
+#partner ul {
+  margin-right: 45%;
+  color: white;
+  font-size: 125%;
+  font-weight: bold;
+  margin-top: 2%;
+}
+
+#ourteam-social h2 {
+  font-family: 'Dosis', sans-serif;
+  font-size: 400%;
+  padding-top: 3%;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 5%;
+  color: yellow;
+}
+
+.twitter-embed {
+  background-image: linear-gradient(#080452, #cc2828);
+  border-radius: 18px;
+  background-color: black;
+  box-shadow: 0px 4.5px 10px rgba(0, 0, 0, 0.5);
+  font-family: 'Dosis', sans-serif;
+  font-size: 120%;
+  padding: 1%;
+}
+
+#editor ul, #founder ul {
+  list-style-image: url(../images/marker.gif);
+  margin-top: 3%;
+  margin-left: 3%;
+}
+
+#job p {
+  text-align: center;
+}
+
+.job-button {
+  margin-top: 5%;
+}
+
+/*our-development-process.html*/
+#ourdev-banner {
+  background-image: url("../images/ourteam-banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: auto;
+  height: 775px;
+}
+
+#ourdev-banner hr {
+  border-top: 1px solid #bbb;
+  background-color: #bbb;
+  border-radius: 5px;
+  width: 50%;
+}
+
+#ourdev-banner h1{
+  font-size: 1300%;
+  font-family: 'Dosis', sans-serif;
+  display:inline-block;
+}
+
+#ourdev-banner h1:hover{
+  color: orange;
+}
+
+.ourdev-banner-content p  {
+background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 0.4);
+font-size: 150%;
+border-radius: 18px;
+}
+
+.ourdev-banner-content  {
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  padding: 20px;
+  text-align: center;
+}
+
+#gamedev2 h4{
+  display: none;
+}
+
+#gamedev h2, #gamedev2 h2 {
+  font-family: 'Dosis', sans-serif;
+  font-size: 400%;
+  padding-top: 3%;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 5%;
+  color: yellow;
+}
+
+#gamedev img, #gamedev2 img  {
+  width: 30%;
+  height: auto;
+  border-radius: 12.5px;
+  margin-bottom: 5%;
+  margin-top: 8%;
+  margin-right: 10%;
+  margin-left: 7%;
+}
+
+.gamedev1, .gamedev2 {
+  overflow: auto;
+}
+
+.gamedev1 img {
+  float: left;
+}
+
+.gamedev1 p, .gamedev1 h3, .gamedev2 p, .gamedev2 h3 {
+  border-radius: 12.5px;
+  margin-right: 10%;
+  color: white;
+  font-size: 125%;
+  font-weight: bold;
+  text-align: center;
+}
+
+.gamedev2 img {
+  float: right;
+}
+
+#gamedev h3, #gamedev2 h3 {
+  margin-top: 9%;
+  font-family: 'Dosis', sans-serif;
+  font-size: 230%;
+  margin-bottom: 2%;
+  color: turquoise;
+}
+
+.gamedev-button {
+  margin-top: 3%;
+}
+
+.gamedev1 .gamedev-button {
+  margin-right: 10%;
+}
+
+#otherdev {
+  background-image: linear-gradient(#1e1e1e, #353535);
+}
+
+#otherdev .content-wrap {
+  overflow: auto;
+  position: relative;
+  color: white;
+}
+
+#otherdev img {
+  height: auto;
+  width: 35%;
+}
+
+#otherdev p {
+  width: 70%;
+  margin-left: 13.5%;
+  margin-top: 1.5%;
+  font-size: 125%;
+  font-weight: bold;
+}
+
+#otherdev h2 {
+  margin-top: 3%;
+  font-weight: bold;
+  font-size: 178%;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #FF711D;
+  font-family: 'Dosis', sans-serif;
+}
+
+.avee {
+  float: left;
+  width: 48.8%;
+  text-align: center;
+  position: relative;
+}
+
+.hitfilm {
+  float: right;
+  width: 48.8%;
+  text-align: center;
+  position: relative;
+}
+
+.opensource article {
+  border-radius: 12.5px;
+  margin-right: 10%;
+  color: white;
+  font-size: 125%;
+  font-weight: bold;
+  text-align: center;
+}
+
+/*games-in-development.html*/
+.dev-masthead {
+  color: black;
+  position: absolute;
+  width: 100%;
+  z-index: 5;
+  width: 100%;
+}
+
+
+#foreground {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.3;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.h,
+.b {
+  position: relative;
+  height: 100%;
+}
+
+.b {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+    background-color: black;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#game-dev-main{
+  display: none;
+}
+
+.verticalnav{
+  padding-left: 2%;
+  padding-top: 3%;
+  margin-top:6.7%;
+  text-decoration: none;
+  position: absolute;
+  z-index: 5;
+  display: inline-block;
+  height: 79.5%;
+}
+
+.swiper-slide video{
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.verticalnav a{
+  text-decoration: none;
+  font-family: 'Dosis', sans-serif;
+  color: white;
+  font-size: 175%;
+  padding: 7%;
+  font-weight: bold;
+  text-transform: uppercase;
+
+}
+
+.verticalnav li{
+  text-decoration: none;
+  margin-top: 25%;
+  list-style: none;
+}
+
+.verticalnav a:hover {
+  color: turquoise;
+}
+
+.verticalnav a.active {
+  background-color: #1abc9c;
+  color: white;
+}
+
+.slide-content {
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  margin-top: 200px;
+  left: 50%;
+  width: 70%;
+  padding: 20px;
+  text-align: center;
+  display: inline-block;
+  text-transform: capitalize;
+}
+
+.slide-content h1{
+  font-size: 400%;
+  text-transform: uppercase;
+}
+
+.slide-content h1:hover{
+  color: cyan;
+}
+
+/*our-community.html*/
+#community-banner{
+  background: rgb(63,3,156);
+  background: radial-gradient(circle, rgba(63,3,156,1) 0%, rgba(217,21,115,1) 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: auto;
+  height: 775px;
+}
+
+.community-banner-content {
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  text-align: center;
+}
+
+.community-banner-content img{
+  height: auto;
+  width:100%;
+  border: 3px solid #f1f1f1;
+  border-radius: 18px;
+  box-shadow: 0px 4.5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.community-banner-content h1{
+  font-family: 'Dosis', sans-serif;
+  margin-bottom: 1%;
+  margin-top: 3%;
+  font-size: 300%;
+  text-shadow: 0px 4.5px 10px rgba(0, 0, 0, 0.5);
+  color: turquoise;
+  display: inline-block;
+}
+
+.community-banner-content h1:hover{
+  color:crimson;
+}
+
+
+.community-banner-content p{
+  color: white;
+  font-size: 150%;
+}
+
+#click-area{
+  font-size: 100%;
+}
+
+#community-about .content-wrap{
+  overflow: auto;
+}
+
+#community-about h2{
+  font-family: 'Dosis', sans-serif;
+  font-size: 400%;
+  padding-top: 3%;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 5%;
+  color: black;
+}
+
+#community-about img{
+  width: 48.5%;
+  height: auto;
+  border-radius: 12.5px;
+  box-shadow: 0px 4.5px 10px rgba(0, 0, 0, 0.5);
+  margin-bottom: 5%;
+  margin-top: 5%;
+  margin-right: 10%;
+  box-shadow: 0px 4.5px 10px rgba(0, 0, 0, 0.9);
+}
+
+#community-about p{
+  border-radius: 12.5px;
+  font-size: 125%;
+  font-weight: bold;
+}
+
+.about-the-community{
+  text-align: center;
+  float: right;
+  width: 40%;
+  margin-top: 5%;
+  margin-right: 1.5%;
+}
+
+.about-the-community h3{
+  margin-top: 5%;
+  font-family: 'Dosis', sans-serif;
+  font-size: 230%;
+  margin-bottom: 2%;
+  color: #FF711D;
+}
+
+#community-gallery h2{
+  font-family: 'Dosis', sans-serif;
+  font-size: 400%;
+  padding-top: 3%;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 5%;
+  color: yellow;
+}
+
+.gallery{
+  margin: auto;
+  text-align: center;
+}
+
+.pic{
+  display: inline-block;
+  width: 30%;
+  height: 30%;
+  padding-left: 5px;
+  font-weight: bold;
+  padding: 4%;
+}
+
+.pic img{
+  width: 100%;
+  height: auto;
+  opacity: 0.7;
+  border-radius: 18px;
+  border:2px solid white;
+  box-shadow: 0px 4.5px 10px rgba(0, 0, 0, 0.9);
+}
+
+.pic figcaption{
+  color: white;
+  margin-top: 2%;
+  font-size: 100%;
+  text-transform: capitalize;
+}
+
+.pic i{
+  font-family: 'Dosis', sans-serif;
+  font-weight: bold;
+  font-size: 150%;
+  font-style: normal;
+  color: #FF711D;
+}
+
+.pic:hover{
+  transition: 2s;
+  cursor: pointer;
+  transform: rotate(360deg);
+  width: 40%;
+  height: 40%;
+}
+
+.pic img:hover{
+  transition: opacity 3s ease-out;
+  opacity: 1;
+  border: 2px solid turquoise;
+}
+
+
+#discord-community .content-wrap{
+  overflow: auto;
+  text-align: center;
+}
+
+#discord-community h2{
+  font-family: 'Dosis', sans-serif;
+  font-size: 400%;
+  padding-top: 3%;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 5%;
+  color: black;
+}
+
+#discord-community img{
+  width: 30%;
+  height: auto;
+  border-radius: 12.5px;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+#discord-community p{
+  border-radius: 12.5px;
+  font-size: 125%;
+  font-weight: bold;
+  margin-bottom: 10%;
+}
+
+.discord-content{
+  text-align: center;
+  float: left;
+  width: 40%;
+  margin-top: 5%;
+  margin-left: 7%;
+}
+
+.discord-content h3{
+  margin-top: 5%;
+  font-family: 'Dosis', sans-serif;
+  font-size: 230%;
+  margin-bottom: 2%;
+  color: #FF711D;
+}
+
+#embed-section h2{
+  font-family: 'Dosis', sans-serif;
+  font-size: 400%;
+  padding-top: 3%;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 8%;
+  color: yellow;
+}
+
+#embed-section .content-wrap{
+overflow:auto;
+}
+
+.facebook-block{
+  border: 2.5px solid turquoise;
+  display: inline-block;
+}
+
+.twitter-block{
+  width: 80%;
+  float: right;
+}
+
+/*Optimisation*/
+.more-support, #index-community, #kart-container, #valirant-container, #about-the-team, .contact-community, .gameplay, #soundtrack, #partner, #ourteam-social, #gamedev, #gamedev2, #community-gallery, #embed-section, #index-team, #index-community, #kart-container, #valirant-container, #about-the-team, .title-in-dev {
+  background-image: linear-gradient(#012d3b, #03779d);
+}
+
+#index-promo, #index-learn, #games-cube, #super-container, .story, .dev, .contact-form-section, #about-the-game, #game-features, #game-form, #founder, #editor, #job, #community-about, #discord-community {
+  background-image: linear-gradient(#c9f1fd, rgba(0, 0, 0, 0.01));
+}
+/*Working on RWD*/
+
+/*index.html media queries*/
+@media (max-width: 980px) {
+
+#fa-fa{
+  display: block;
+}
+
+  .banner-content{
+    margin-top: 100px;
+  }
+
+.secondary-nav{
+  display: none;
+}
+
+  header {
+  position: relative;
+  }
+
+  nav {
+    margin-top: 8%;
+  }
+
+  nav ul {
+  width: 100%;
+  background: rgba(0, 0, 0, 0);
+  max-height: 0px;
+  overflow: hidden;
+  text-align: left;
+  }
+
+  nav li {
+  margin: 10px;
+  }
+
+  nav ul li {
+  width: 100%;
+  }
+
+  nav ul .dropdown .dropdown-content {
+  position: static;
+  display: block;
+  width: 100%;
+  max-height: 150px;
+  background-color: inherit;
+  box-shadow: none;
+  text-align: left;
+  }
+
+  nav ul li ul li a {
+padding: 10px;
+color: white;
+padding-left: 50px;
+}
+
+nav .icon {
+display: block;
+position: absolute;
+right: 10px;
+top: 10px;
+font-size: 1.9em;
+}
+
+.logo figure{
+  display: inline-block;
+  width: 340px;
+  float: left;
+}
+}
+
+@media (max-width: 1110px) {
+  #index-banner h1{
+    font-size: 1000%;
+  }
+}
+
+@media (max-width: 847px) {
+  #index-banner h1{
+    font-size: 700%;
+  }
+}
+
+@media (max-width: 595px) {
+  #index-banner h1{
+    font-size: 400%;
+  }
+
+  #index-promo h2{
+    font-size:175%;
+  }
+
+#index-team img{
+  width: 80%;
+}
+
+#index-team{
+  text-align: center;
+}
+#index-team .team-msg{
+  float: none;
+  width: 100%;
+}
+
+#index-learn tbody{
+    float:right
+}
+
+#index-learn tbody td{
+    display: block;
+}
+
+#index-learn td{
+margin-bottom: 10%;
+}
+
+#index-community img{
+  float: none;
+  width: 60%;
+}
+
+#index-community{
+  text-align: center;
+}
+
+.index-discord-content{
+  width: 100%;
+}
+
+#index-promo td{
+margin-bottom: 20%;
+}
+
+}
+
+@media (max-width: 350px) {
+  #index-banner h1{
+    font-size: 350%;
+  }
+  .logo figcaption{
+    font-size: 200%;
+  }
+
+.logo figure{
+  width: 300px;
+}
+  .promo-button button{
+    font-size: 60%;
+  }
+
+  #index-community button{
+  font-size: 70%;
+  }
+
+  #index-community img{
+    margin-left: 20%;
+  }
+}
+
+@media (max-width: 670px) {
+
+#index-promo tbody{
+    float:right
+}
+
+#index-promo tbody td{
+    display: block;
+}
+
+#index-promo td:first-child
+{
+    display:none;
+}
+
+#index-promo td{
+margin-bottom: 20%;
+}
+
+}
+
+/*games.html media queries*/
+@media (max-width: 1349px)  {
+  .games-banner-content h1{
+    font-size: 900%;
+  }
+  .promo-table figcaption{
+    font-size: 100%;
+  }
+}
+
+@media (max-width: 984px)  {
+  .games-banner-content h1{
+    font-size: 700%;
+  }
+
+  .games-banner-content, .games-promo{
+    margin-top: 200px;
+  }
+
+  .promo-table figcaption{
+    font-size: 78.2%;
+  }
+}
+
+@media (max-width: 721px) {
+.games-promo{
+  display: none;
+}
+}
+
+@media (max-width: 372px) {
+  .games-banner-content h1{
+    font-size: 500%;
+  }
+
+  .games-banner-content{
+    margin-top: 300px;
+  }
+}
+
+@media (max-width: 639px) {
+
+#games-cube img, #super-container img, #kart-container img, #valirant-container img{
+width: 90%;
+float: none;
+}
+
+#games-cube, #super-container, #kart-container, #valirant-container{
+text-align: center;
+}
+
+.cube-msg, .super-msg, .kart-msg, .valirant-msg{
+  width: 100%;
+  float: none;
+}
+
+.cube-msg p, .super-msg p, .kart-msg p, .valirant-msg p{
+  font-size: 10%;
+}
+
+.cube-msg h2, .super-msg h2, .kart-msg h2, .valirant-msg h2{
+  font-size: 10%;
+}
+
+}
+
+@media (max-width: 1479px) {
+  .about-us-content h1{
+    font-size: 600%;
+  }
+}
+
+@media (max-width: 980px){
+  .about-us-content h1{
+    font-size: 400%;
+  }
+  .about-us-content{
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 658px){
+  .about-us-content h1{
+    font-size: 190%;
+  }
+
+.about-team video{
+  width: 70%;
+  height: auto;
+}
+
+}
+
+@media (max-width: 760px) {
+  .studio-beginning img, .game-studio img , .tech-enthusiast img {
+    float: none;
+    width: 70%;
+  }
+
+.tech-enthusiast img{
+  margin-right: 4%;
+}
+
+.studio-beginning img, .game-studio img{
+  margin-left: 12%;
+}
+
+.story{
+  text-align:center;
+}
+
+.begin-msg, .enthusiast-msg, .valiant-team-msg{
+  width: 70%;
+  margin-left: 15%;
+}
+
+.story p{
+  text-align:center;
+}
+
+.story .content-wrap{
+  text-align: center;
+}
+}
+
+@media (max-width: 450px){
+  .about-team video{
+    width: 100%;
+    height: auto;
+  }
+
+
+}
+
+/*our-team.html media queries*/
+@media (max-width: 1485px) {
+  .ourteam-banner-content h1{
+    font-size: 1000%;
+  }
+
+}
+
+@media (max-width: 1338px){
+  .ourteam-banner-content h1{
+    font-size: 800%;
+  }
+
+.support-banner-content{
+  margin-top: 50px;
+  margin-left: 20px;
+}
+
+.form-title{
+  left:25%;
+}
+
+.support-banner-content h1{
+  font-size: 500%;
+}
+
+}
+
+@media (max-width: 1050px){
+  .ourteam-banner-content h1{
+    font-size: 500%;
+  }
+
+}
+
+@media (max-width: 982px){
+  .ourteam-banner-content{
+    margin-top: 100px;
+  }
+
+}
+
+@media (max-width: 803px){
+
+  #founder  , #editor , #job , #partner {
+    text-align: center;
+  }
+
+
+
+  #founder .item, #editor .item, #job .item {
+    float: none;
+  }
+  #partner .item{
+    float: none;
+  }
+
+  #founder .founder-content, #editor .editor-content, #job .job-content, #partner .partner-content {
+    color: black;
+    text-align: center;
+    font-size: 125%;
+    font-weight: bold;
+    margin-top: 2%;
+    width: 100%;
+    margin-left: 0%;
+  }
+
+  #editor-list, #founder-list{
+    width:40%;
+  }
+
+  .founder-list, .editor-list{
+    margin-left: 38%;
+  }
+
+  .item{
+  width: 50%;
+  margin-right: 5%;
+  }
+
+#partner .polaroid{
+  margin-left: 12%;
+  width: 85%;
+}
+  #partner p{
+    margin-right:0%;
+  }
+}
+
+@media (max-width: 535px){
+#partner .caption, #editor .caption, #founder .caption, #job .caption{
+  font-size:110%;
+}
+
+.item{
+width: 70%;
+}
+
+.founder-list, .editor-list{
+  margin-left: 38%;
+}
+
+#partner h3{
+  font-size: 150%;
+}
+
+}
+
+/*games-in-development.html media queries*/
+@media (max-width: 980px) {
+#game-dev-main {
+  display: block;
+}
+
+.dev-masthead{
+background-color: rgba(0, 0, 0, 0.80);
+}
+
+
+.verticalnav{
+  display: none;
+}
+
+.slide-content{
+  margin-top: 400px;
+}
+
+.support-banner-content h1{
+  font-size:450%;
+}
+
+.support-banner-content{
+  margin-top: 100px;
+  margin-left: 2%;
+  left:0
+}
+
+}
+
+@media (max-width: 504px){
+.slide-content h1{
+  font-size: 270%;
+}
+
+#slide2 h1,#slide3 h1{
+  font-size: 200%;
+}
+
+.dev h2{
+  font-size: 218%;
+}
+
+}
+
+/*our-community.html media queries*/
+@media (max-width: 980px){
+.community-banner-content{
+  margin-top: 100px;
+}
+}
+
+@media (max-width: 685px){
+
+.community-banner-content{
+  text-align: center;
+}
+  .community-banner-image img{
+    width: 120%;
+    margin-left: -50px
+  }
+
+  #community-about{
+text-align: center;
+  }
+
+  .about-the-community{
+    text-align: center;
+    float: none;
+    width: 100%;
+    margin-right: 0%;
+  }
+
+  #community-about img{
+    width: 100%;
+    height: auto;
+    border-radius: 12.5px;
+    box-shadow: 0px 4.5px 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 5%;
+    margin-top: 5%;
+    box-shadow: 0px 4.5px 10px rgba(0, 0, 0, 0.9);
+    margin-right: 10px;
+  }
+
+.contact-community table{
+  text-align: center;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+  .contact-community tbody{
+      float:right;
+      margin-right: 10%;
+      margin-left: 10%;
+  }
+
+  .contact-community tbody td{
+      display: block;
+  }
+
+  .contact-community td{
+  margin-bottom: 20%;
+  }
+
+
+}
+
+@media (max-width: 520px){
+  .community-banner-image img{
+    width: 135%;
+    margin-left: -60px;
+  }
+}
+
+@media (max-width: 440px){
+  .community-banner-image img{
+    width: 125%;
+    margin-left: -40px;
+  }
+
+
+  .pic{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-left: -20px;
+  }
+
+  .pic:hover{
+    width: 120%;
+    height: auto;
+    margin-left: -35px;
+  }
+
+  #discord-community h2{
+    font-size: 300%;
+  }
+}
+
+@media (max-width: 320px){
+  .community-banner-image img{
+    width: 130%;
+    margin-left: -37px;
+  }
+
+  #discord-community h2{
+    font-size: 280%;
+  }
+}
+
+@media (max-width: 541px){
+
+.gallery{
+margin-left: 60px;
+}
+
+.pic{
+  display: block;
+  width: 70%;
+  height: auto;
+}
+
+.pic:hover{
+  width: 90%;
+  height: auto;
+  margin-left: -35px;
+}
+}
+
+@media (max-width: 570px){
+  .discord-content{
+    text-align: center;
+    float: none;
+    width: 100%;
+    margin-top: 5%;
+    margin-left: 0%;
+  }
+
+  #discord-community img{
+    width: 60%;
+    height: auto;
+    margin-bottom: 5%;
+    margin-top: 5%;
+  }
+
+}
+
+  @media (max-width: 1025px){
+    .twitter-block{
+    width:70%;
+    }
+  }
+
+@media (max-width: 717px){
+  .twitter-block{
+  width:50%;
+  }
+}
+
+@media (max-width: 470px){
+.twitter-block{
+  float:none;
+  margin-top: 5%;
+  width:100%;
+}
+
+#embed-section{
+  text-align: center;
+}
+
+#embed-section h2{
+  font-size: 285%;
+}
+
+
+}
+
+/*our-development-process.html media queries*/
+@media (max-width: 1130px){
+  #ourdev-banner h1{
+    font-size: 1000%;
+  }
+}
+
+@media (max-width: 980px){
+  .ourdev-banner-content{
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 870px){
+  #ourdev-banner h1{
+    font-size: 700%;
+  }
+}
+
+@media (max-width: 609px){
+  .ourdev-banner-content{
+    margin-top: 150px;
+  }
+}
+
+@media (max-width: 497px){
+#gamedev h2, #gamedev2 h2{
+  font-size: 200%;
+}
+}
+
+@media (max-width: 750px){
+  .gamedev1 img, .gamedev2 img{
+    float: none;
+  }
+
+  .gamedev1, .gamedev2{
+    text-align: center;
+  }
+
+  #gamedev img, #gamedev2 img {
+    width: 40%;
+    height: auto;
+    border-radius: 12.5px;
+    margin-bottom: 1%;
+    margin-top: 10%;
+    margin-right: 0%;
+    margin-left: 0%;
+  }
+
+  .gamedev1 p, .gamedev1 h3, .gamedev2 p, .gamedev2 h3, .gamedev1 article, .gamedev2 article {
+    border-radius: 12.5px;
+    margin-right: 0%;
+  }
+
+  .gamedev1 .gamedev-button, .gamedev2 .gamedev-button {
+    margin-right: 0%;
+    margin-top: 6%;
+  }
+}
+
+@media (max-width: 558px){
+  .avee, .hitfilm {
+    float: none;
+    width: 100%;
+    text-align: center;
+    position: relative;
+  }
+
+.hitfilm{
+  margin-top: 20%;
+}
+
+  #otherdev .content-wrap{
+    text-align: center;
+  }
+}
+
+/*contact-us.html media queries*/
+@media (max-width: 980px){
+.map-spacer{
+  margin-bottom: 90px;
+}
+
+.contact-map{
+  height: 600px;
+}
+
+}
+
+@media (max-width: 840px){
+.contact-card{
+  float: none;
+  width:100%;
+}
+.contact-form{
+  float:none;
+  width:100%;
+  text-align: center;
+}
+.inner-form{
+  margin-left: 23.5%;
+  width:55%;
+  padding-top: 4%;
+}
+}
+
+@media (max-width: 770px){
+  .inner-form{
+    width:100%;
+    margin-left: 0%;
+    text-align: center;
+  }
+
+  #postform textarea{
+    margin-right: 0%;
+  }
+
+}
+
+@media (max-width: 476px){
+  #postform legend, #ddlgames, #postform fieldset, #postform textarea {
+    width: 70%;
+  }
+
+  #txtemail, #txtgamer, #txtacomments{
+    width: 70%;
+  }
+
+  #postform legend{
+    font-size: 85%;
+  }
+}
+
+@media (max-width: 386px){
+.contact-community img{
+  width: 110px;
+  height: auto;
+}
+
+.contact-community tbody{
+  margin-right: 0%;
+  margin-left: 8%;
+}
+
+#more-table button{
+  font-size: 70%;
+}
+
+#more-table img{
+  width: 70%;
+  height:auto;
+}
+}
+
+/*support.html media queries*/
+@media (max-width: 706px){
+  .more-support table{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+    .more-support tbody{
+        float:right;
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+
+    .more-support tbody td{
+        display: block;
+        display: inline-block;
+    }
+
+    .more-support td{
+    margin-bottom: 20%;
+
+    }
+}
+
+@media (max-width: 320px){
+  #more-table button{
+    font-size: 65%;
+  }
+
+#more-table figcaption{
+  margin-bottom: 10%;
+}
+
+#more-table #mybtn{
+  margin-bottom:25%;
+}
+
+  .more-support table{
+    margin-left: 2%;
+  }
+}
+
+@media (max-width: 1037px){
+
+.form-title{
+  left:0%;
+}
+
+#test table{
+  float:none;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.table-2{
+  margin-top: 10%;
+}
+}
+
+@media (max-width: 603px){
+
+.support-banner-content p{
+font-size: 100%;
+}
+
+  .support-banner-content h1{
+    font-size: 200%;
+  }
+
+  .table-1 details{
+    width: 100%;
+  }
+
+  .form-title h1{
+    font-size: 120%;
+  }
+
+.form-title{
+width:70%;
+}
+
+  .support-form-wrapper{
+    border: 0px;
+    width:60%;
+  }
+}
+
+@media (max-width: 1081px){
+#discord-td{
+  margin-right: 0;
+  display: inline-block;
+}
+ .more-support table{
+  width:90%;
+ }
+}
+
+/*the-valiant-cube.html media queries (template)*/
+@media (max-width: 961px){
+  .game-description {
+    float:none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    text-align: center;
+  }
+
+  .game-description p{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .game-trailer {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 4%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 566px){
+  .game-trailer iframe{
+    width: 100%;
+    height: 231px;
+  }
+}
+
+@media (max-width: 566px){
+  .game-trailer iframe{
+    width: 100%;
+    height: 181px;
+  }
+}
+
+@media (max-width: 909px){
+  .gameplay1 img, .gameplay2 img {
+    float: none;
+    width: 82%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .gameplay1, .gameplay2{
+    text-align: center;
+  }
+
+  .gameplay1 p, .gameplay1 h3, .gameplay2 p, .gameplay2 h3 {
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  }
+}
+
+@media (max-width: 370px){
+  .game-trailer iframe{
+    width: 100%;
+    height: 141px;
+  }
+}
+
+
+@media (max-width: 404px){
+  #game-play h2, #game-features h2, #game-form h2 {
+    font-size: 300%;
+  }
+
+  #soundtrack h2{
+    font-size: 275%;
+  }
+}
+
+@media (max-width: 651px){
+  .features-table table{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+    .features-table tbody{
+        float:right;
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+
+    .features-table tbody td{
+        display: block;
+        display: inline-block;
+    }
+
+    .features-table td{
+    margin-bottom: 20%;
+    }
+
+    .features-table img{
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .feature2 img{
+      width:100%;
+    }
+
+    #game-features h2{
+      margin-bottom: 25%;
+    }
+
+
+    .soundtrack-table audio{
+      width: 100%;
+    }
+
+    .soundtrack-table table{
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+    }
+
+      .soundtrack-table tbody{
+          float:right;
+          margin-right: auto;
+          margin-left: auto;
+          width: 100%;
+          text-align: center;
+      }
+
+      .soundtrack-table tbody td{
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 100%;
+          display: inline-block;
+      }
+
+      #soundtrack-author{
+        transform: rotate(-90deg);
+        width: 25%;
+        margin-top:-100px;
+      }
+
+      .music1{
+        margin-top: -100px;
+      }
+
+
+      .music1,.music2,.music3{
+        width: 108%;
+        margin-left: 0%;
+      display: inline-block;
+      }
+
+.soundtrack-table td{
+  padding: 27px;
+}
+
+    #trackauthor td {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    #audio,#audio1,#audio2{
+      width: 100%;
+    }
+
+    #soundtrack-title {
+      text-align: left;
+    }
+
+    #soundtrack h2{
+      font-size: 275%;
+    }
+}
+
+@media (max-width: 455px){
+  #audio,#audio1,#audio2{
+    width: 76%;
+    margin-left: -40%;
+    text-align: left;
+  }
+
+  #soundtrack-author{
+    transform: rotate(-90deg);
+    width: 15%;
+    margin-top:-100px;
+  }
+
+  #trackname1,#trackname2,#trackname3{
+    margin-right: 70%;
+    font-size: 100%;
+  }
+
+  #soundtrack-author{
+    font-size: 200%;
+  }
+
+  #tickmarks{
+    font-size: 60%;
+    margin-left: -10px;
+  }
+
+}
+
+@media (max-width: 523px){
+#txtGame,#txtgameid,#txtgamer,#txtemail,#game-checkbox,#game-spinner,#game-checkbox,#collab,#mycollab{
+  width:70%;
+}
+
+#form-btn1,#form-btn2{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.input-container{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#tickmarks{
+  font-size: 50%;
+  margin-left: 0px;
+}
+
+#tickmarks option{
+  padding: 2%;
+}
+
+.input-container fieldset{
+  margin-right: auto;
+  margin-left: auto;
+}
+}
+
+@media (max-width: 390px){
+#ticks{
+  margin-right: 5%;
+
+}
+
+#tickmarks{
+  font-size: 50%;
+  margin-left: -5px;
+}
+}
+
+@media (max-width: 598px){
+#game-checkbox input{
+  display: block;
+}
+}
+
+@media (max-width: 970px){
+  .our-dev{
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .dev-table{
+    float:none;
+    display: inline-block;
+  }
+
+.dev-table figure{
+  width:90%;
+}
+
+  .dev-para{
+    margin-left: auto;
+    margin-right: auto;
+    width:90%;
+  }
+}
+
+@media (max-width: 656px){
+
+  #txtacomment, #txtpassword,#myDate{
+      width: 70%;
+    }
+}
