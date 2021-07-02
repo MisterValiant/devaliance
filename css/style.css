@@ -3463,9 +3463,11 @@ width:70%;
       }
 
       #soundtrack-author{
-        transform: rotate(-90deg);
-        width: 25%;
+        transform: rotate(0deg);
+        width: 50%;
         margin-top:-100px;
+        margin-left: 15%;
+        margin-bottom: 10%;
       }
 
       .music1{
@@ -3474,7 +3476,7 @@ width:70%;
 
 
       .music1,.music2,.music3{
-        width: 108%;
+        width: 85%;
         margin-left: 0%;
       display: inline-block;
       }
@@ -3509,9 +3511,12 @@ width:70%;
   }
 
   #soundtrack-author{
-    transform: rotate(-90deg);
-    width: 15%;
-    margin-top:-100px;
+    transform: rotate(0deg);
+    width: 100%;
+    margin-top:3px;
+    margin-bottom: 50px;
+      font-size: 200%;
+      margin-left: -10%;
   }
 
   #trackname1,#trackname2,#trackname3{
@@ -3519,9 +3524,7 @@ width:70%;
     font-size: 100%;
   }
 
-  #soundtrack-author{
-    font-size: 200%;
-  }
+
 
   #tickmarks{
     font-size: 60%;
