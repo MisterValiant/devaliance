@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Javascript - DeValiance</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Play some fun javascript activities with DeValiance">
+  <meta name="keywords" content="indie video games, indie game studio, indie game developers">
+  <link rel="shortcut icon" href="../icon/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="../icon/favicon.ico" type="image/x-icon">
+  <!-- Bootstrap -->
+  <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../bootstrap/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <nav class="row">
+      <ul class="nav nav-tabs nav-justified w-100">
+        <li class="nav-item"><a class="nav-link active" href="">Javascript</a></li>
+        <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="../html/about-us.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="../html/games.html">Games</a></li>
+        <li class="nav-item"><a class="nav-link" href="../html/contact-us.html">Contact</a></li>
+      </ul>
+    </nav>
+    <br>
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="../index.html"> <i class="fas fa-arrow-right"></i>Home</a> <span></span></li>
+      <li class="breadcrumb-item"><a href="../html/our-team.html"><i class="fas fa-arrow-right"></i>Our Team</a> <span></span></li>
+      <li class="breadcrumb-item"><i class="fas fa-arrow-right"></i>Javascript</li>
+    </ol>
+    <!-- row 1 -->
+    <header class="row">
+      <div class="col-lg-6 col-sm-5">
+        <a href="../index.html"><img class="img-fluid" src="../bootstrap/img/logo.png" alt="Thank you from DeValiance"></a>
+      </div>
+
+    </header>
+    <br>
+    <div class="col-12 alert alert-success alert-dismissble fade show" role="alert">
+      <strong>Welcome! </strong>
+      This is my Javascript webpage. &#x1F60D;
+      <a href="#" class="alert-link">(message)</a>
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+    </div>
+    <br>
+    <!-- row 2 -->
+    <section id="jumbo" class="jumbotron jumbotron-fluid bg-info shadow-lg">
+      <h1 class="text-uppercase display-1 text-center text-white"><span class="badge badge-primary badge-pill"> Javascript</span> webpage!</h1>
+      <br>
+      <p class="font-italic text-center lead text-white">Play with the different javascript implementations</p>
+    </section>
+    <br>
+
+    <div class="col-12 alert alert-warning alert-dismissble fade show" role="alert">
+      <strong>Warning!</strong>
+      Here are the different implementations! &#x1F601;
+      <a href="#" class="alert-link">(warning)</a>
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+    </div>
+    <br>
+    <br>
+    <!-- row 3 -->
+    <main id="games" class="row">
+
+
+      <div class="col-12 text-white text-center">
+        <h1 class="text-success">Activate the different modes</h1>
+         <button type="button" onclick="resetTheFunction()">Activate Light mode</button>
+     <button type="button" onclick="theFunction()">Activate Dark mode</button>
+      </div>
+<br>
+      <div id="colorchange" class="col-12 text-white text-center">
+        <br>
+        <h1 class="text-warning">Change colour</h1><br>
+        <label for="mycolor">Input color:</label> <input type="mycolor" id="mycolor" name="mycolor" value="turquoise"><br>
+        <button onclick="colorMyFunction()">Enter</button>
+        <button onclick="resetMyFunction()">reset</button>
+      </div>
+
+      <div id="game2" class="row">
+
+        </div>
+        <div id="slideshow" class="col-12 text-center text-success">
+          <h2>Cycling banner and slideshow</h2>
+
+<div class="slideshow-container">
+
+<div class="slides fade">
+  <div class="number">1 / 4</div>
+  <img src="../images/cube-obstacle.png" style="width:100%">
+  <div class="text">The Valiant Cube</div>
+</div>
+
+<div class="slides fade">
+  <div class="number">2 / 4</div>
+  <img src="../images/kart-theme.png" style="width:100%">
+  <div class="text">Valiant Kart</div>
+</div>
+
+<div class="slides fade">
+  <div class="number">3 / 4</div>
+  <img src="../images/super-customise.png" style="width:100%">
+  <div class="text">Super Valiant</div>
+</div>
+
+<div class="slides fade">
+  <div class="number">4 / 4</div>
+  <img src="../images/valirant-reload.png" style="width:100%">
+  <div class="text">Valirant</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+        </div>
+      </div>
+      <br>
+    </main>
+
+    <br>
+
+  </div>
+  <!-- row 4 -->
+  <footer class="">
+    <div class="container">
+      <div class="col-12 text-center">
+        <p class="paragraph text-center text-white"><small>This is a university project and does not depict a real studio.</small></p>
+        <p class="paragraph text-center text-white"><small>However, the games on this website are real and owned by the creator.</small></p>
+      </div>
+      <br>
+        <p class="col-12 text-center text-white">&copy; 2021 | by DeValiance</p>
+    </div>
+
+
+  </footer>
+  <!-- end container -->
+
+  <!-- javascript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+  <script src="../bootstrap/js/jquery-3.5.1.js"></script>
+  <script src="../bootstrap/js/bootstrap.min.js"></script>
+  <script src="script.js">
+  </script>
+
+</body>
+
+</html>
