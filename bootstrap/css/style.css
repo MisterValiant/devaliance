@@ -58,3 +58,18 @@ margin-top:100px;
 #mytable{
   margin-top: 100px;
 }
+
+@media (max-width: 578px)  {
+  #gallery h3{
+    font-size: 300%;
+  }
+
+#heading h2{
+  font-size: 300%;
+}
+
+#galley{
+  width: 100%;
+  height: auto;
+}
+}
