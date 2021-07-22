@@ -80,4 +80,8 @@ margin-right: auto;
   #num2{
     font-size: 50%;
   }
+
+  #jumbo h1{
+    font-size: 275%;
+  }
 }
