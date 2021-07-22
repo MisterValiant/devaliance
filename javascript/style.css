@@ -79,3 +79,16 @@ img {vertical-align: middle;}
 #slideshow h2{
   margin-bottom: 50px;
 }
+
+@media (max-width: 768px)  {
+  #jumbo h2{
+    font-size: 300%;
+  }
+}
+
+
+@media (max-width: 330px)  {
+  #jumbo h2{
+    font-size: 275%;
+  }
+}
