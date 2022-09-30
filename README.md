@@ -12,6 +12,8 @@
 >Live demo:
 [https://mistervaliant.github.io/devaliance/](https://mistervaliant.github.io/devaliance/ "DeValiance")
 
+>[![Generic badge](https://img.shields.io/badge/Project_Status:-Deployed-<COLOR>.svg)](https://mistervaliant.github.io/odin-landing/)
+
 <br/>
 
 ## ✒️ General Information 
